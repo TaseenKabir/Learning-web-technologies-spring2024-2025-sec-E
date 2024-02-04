@@ -1,0 +1,21 @@
+<Info>
+    <product pr="1">
+        <slno> 23 </slno>
+        <name>John carter</name>
+        <admissiondate>25/12/2015</admissiondate>
+        
+        
+    </product>
+    <product pr="2">
+        <slno> 29 </slno>
+        <name>Bib marshal</name>
+        <admissiondate>13/01/1999</admissiondate>
+        
+    </product>
+    <product pr="3">
+        <slno> 35 </slno>
+        <name>Cark kent</name>
+        <admissiondate>17/06/2005</admissiondate>
+        
+    </product>
+</Info>
