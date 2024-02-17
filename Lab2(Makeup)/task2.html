@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email and Submit Button</title>
+    <style>
+        .hint-icon {
+            font-style: italic;
+            color: gray;
+            margin-left: 5px;
+        }
+
+        .hint-text {
+            display: none;
+        }
+
+        .hint-icon:hover + .hint-text {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <label for="textbox">Email</label><br>
+        <input type="text" id="textbox" name="textbox">
+        <i class="hint-icon" aria-hidden="true">i</i>
+        <span class="hint-text">hint: sample@example.com</span><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
