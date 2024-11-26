@@ -1,16 +1,25 @@
 <?php
     session_start();
-    
+    if(isset($_COOKIE['flag'])){
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
 <body>
-    <h1>Welcome $username</h1>
-</body>
-</html>
+<table border="1" width=100%>
+        <tr height="100px">
+            <th align="middle">
+                <h2>Home</h2>
+            </th>
+            <th width=20%>
+            Logged in as <a href="view.php"><?php if(isset($_SESSION['username'])){
+            echo($_SESSION['username']);}  ?></a> |
+                <a href="logout.php">Logout</a> 
+            </th>
+        </tr>
+        <?php 
+    }else{
+        header('location: login.php'); 
+    }
+?>
